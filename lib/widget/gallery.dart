@@ -108,7 +108,7 @@ class _GalleryState extends State<Gallery> {
     );
 
     return Container(
-      color: widget.backgroundColor.withValues(alpha: widget.opacity),
+      color: widget.backgroundColor.withOpacity(0.5),
       child: widget.useSafeArea ? SafeArea(child: gallery) : gallery,
     );
   }
